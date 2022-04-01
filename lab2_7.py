@@ -18,8 +18,10 @@ try:
                 for i in range(len(work_buffer) - 1):  # поиск кол-ва идущих подряд одинаковых цифр
                     if work_buffer[i] == work_buffer[i + 1]:
                         kt += 1
-                if kt >= k:  # вывод при выполнении условия
-                    print(work_buffer, end=' ')
+                    else:
+                        if kt >= k:  # вывод при выполнении условия
+                            print(work_buffer, end=' ')
+                        kt = 1
                 kt = 1
                 work_buffer = ''
             buffer = file.read(buffer_len)  # читаем очередной блок
