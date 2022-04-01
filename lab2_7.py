@@ -21,6 +21,7 @@ try:
                     else:
                         if kt >= k:  # вывод при выполнении условия
                             print(work_buffer, end=' ')
+                            break
                         kt = 1
                 kt = 1
                 work_buffer = ''
